@@ -26,9 +26,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * 帖子接口
+ * 接口管理
  *
- * @author yupi
+ * @author wlei224
  */
 @RestController
 @RequestMapping("/interfaceInfo")
