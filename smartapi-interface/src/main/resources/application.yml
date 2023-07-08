@@ -1,0 +1,9 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
+smartapi:
+  client:
+    access-key: wl
+    secret-key: abcdefgh
