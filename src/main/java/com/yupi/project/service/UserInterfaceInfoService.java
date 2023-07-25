@@ -10,4 +10,11 @@ public interface UserInterfaceInfoService extends IService<UserInterfaceInfo> {
 
     void validUserInterfaceInfo(UserInterfaceInfo userInterfaceInfo, boolean add);
 
+    /**
+     * 调用接口统计
+     * @param interfaceId
+     * @param userId
+     * @return
+     */
+    boolean invokeCount(long interfaceId, long userId);
 }

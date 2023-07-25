@@ -1,7 +1,4 @@
 package com.wl.smartapiinterface.controller;
-
-
-
 import com.wl.smartapiclientsdk.model.User;
 import com.wl.smartapiclientsdk.utils.SignUtils;
 import org.springframework.web.bind.annotation.*;
@@ -17,11 +14,13 @@ public class NameController {
 
     @GetMapping("/")
     public String getNameByGet(String name){
+        // 调用成功后，次数 + 1     (因为写通用方法代码侵入性强，还需要开发者自己调用，所以我们使用AOP的方法)
         return "GET 你的名字是" + name;
     }
 
     @PostMapping("/")
     public String getNameByPost(@RequestParam String name){
+        // 调用成功后，次数 + 1
         return "POST 你的名字是" + name;
 
     }
@@ -51,7 +50,13 @@ public class NameController {
         if (!serverSign.equals(sign)) {
             throw new RuntimeException("无权限！");
         }
-        return "POST 你的名字是" + user.getUsername();
+        String result = "POST 你的名字是" + user.getUsername();
+        // 调用成功后，次数加1
+
+
+
+        return result;
+
 
     }
 
