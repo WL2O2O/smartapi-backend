@@ -12,21 +12,22 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/name")
 public class NameController {
 
-    @GetMapping("/")
-    public String getNameByGet(String name){
+    @GetMapping("/get")
+    public String getNameByGet(String name, HttpServletRequest request){
         // 调用成功后，次数 + 1     (因为写通用方法代码侵入性强，还需要开发者自己调用，所以我们使用AOP的方法)
+        System.out.println(request.getHeader("smart"));
         return "GET 你的名字是" + name;
     }
 
-    @PostMapping("/")
+    @PostMapping("/post")
     public String getNameByPost(@RequestParam String name){
         // 调用成功后，次数 + 1
         return "POST 你的名字是" + name;
-
     }
+
     @PostMapping("/user")
     public String getUserNameByPost(@RequestBody User user, HttpServletRequest request){
-        String assessKey = request.getHeader("accessKey");
+        String accessKey = request.getHeader("accessKey");
         // String secretKey = request.getHeader("secretKey");
         String nonce = request.getHeader("nonce");
         String timeStamp = request.getHeader("timeStamp");
@@ -34,7 +35,7 @@ public class NameController {
         String body = request.getHeader("body");
         // TODO 要去数据库中查询
         // 为了方便进行校验，直接进行判断数据，正规来说应该从数据库中进行校验数据
-        if (!assessKey.equals("wl")){
+        if (!accessKey.equals("wl")){
             throw new RuntimeException("无权限！");
         }
         if (Long.parseLong(nonce) > 10000){
@@ -52,8 +53,6 @@ public class NameController {
         }
         String result = "POST 你的名字是" + user.getUsername();
         // 调用成功后，次数加1
-
-
 
         return result;
 

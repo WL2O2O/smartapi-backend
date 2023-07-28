@@ -7,3 +7,7 @@ smartapi:
   client:
     access-key: wl
     secret-key: abcdefgh
+
+#logging:
+#  level:
+#    org.springframework: DEBUG

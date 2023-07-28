@@ -40,6 +40,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--这个依赖引入先打个注释，是通过快捷键自动引入的。<scope>这个标签先打个标签-->
+        <dependency>
+            <groupId>com.wl</groupId>
+            <artifactId>smartapi-client-sdk</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
