@@ -1,6 +1,5 @@
-package com.csguider.smartapigateway;
+package com.yupi.smartapigateway;
 
-import com.sun.xml.internal.bind.v2.TODO;
 import com.wl.smartapiclientsdk.utils.SignUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Publisher;
@@ -131,7 +130,7 @@ public class CustomGlobalFilter implements GlobalFilter, Ordered {
                                 //rspArgs.add(requestUrl);
                                 String data = new String(content, StandardCharsets.UTF_8);//data
                                 sb2.append(data);
-                                log.info(sb2.toString(), rspArgs.toArray());//log.info("<-- {} {}\n", originalResponse.getStatusCode(), data);
+                                log.info("响应结果：" + data);//log.info("<-- {} {}\n", originalResponse.getStatusCode(), data);
                                 return bufferFactory.wrap(content);
                             }));
                         } else {

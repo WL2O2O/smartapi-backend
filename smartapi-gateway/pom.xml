@@ -19,6 +19,18 @@
 
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo -->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>3.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
@@ -40,12 +52,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--这个依赖引入先打个注释，是通过快捷键自动引入的。<scope>这个标签先打个标签-->
+        <!--这个依赖引入先打个注释，是通过快捷键自动引入的。<scope>这个标签先打个标签,表示作用域-->
         <dependency>
             <groupId>com.wl</groupId>
             <artifactId>smartapi-client-sdk</artifactId>
             <version>0.0.1</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
     <dependencyManagement>
