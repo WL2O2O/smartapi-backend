@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 /**
  * 帖子审核状态枚举
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 public enum PostReviewStatusEnum {
 

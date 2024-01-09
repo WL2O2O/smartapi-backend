@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 用户服务
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 public interface UserService extends IService<User> {
 

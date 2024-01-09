@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 用户服务实现类
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 @Service
 @Slf4j
@@ -35,7 +35,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     /**
      * 盐值，混淆密码
      */
-    private static final String SALT = "yupi";
+    private static final String SALT = "csguider";
 
     @Override
     public long userRegister(String userAccount, String userPassword, String checkPassword) {

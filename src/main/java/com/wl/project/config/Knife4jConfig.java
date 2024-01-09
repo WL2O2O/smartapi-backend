@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * Knife4j 接口文档配置
  * https://doc.xiaominfo.com/knife4j/documentation/get_start.html
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 @Configuration
 @EnableSwagger2

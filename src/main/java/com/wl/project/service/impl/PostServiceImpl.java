@@ -13,7 +13,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
- * @author yupili
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>li
  * @description 针对表【post(帖子)】的数据库操作Service实现
  */
 @Service

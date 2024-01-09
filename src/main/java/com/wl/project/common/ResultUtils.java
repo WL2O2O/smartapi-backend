@@ -3,7 +3,7 @@ package com.wl.project.common;
 /**
  * 返回工具类
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 public class ResultUtils {
 

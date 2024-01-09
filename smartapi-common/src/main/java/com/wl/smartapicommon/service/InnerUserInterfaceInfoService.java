@@ -6,8 +6,8 @@ import com.wl.smartapicommon.model.entity.UserInterfaceInfo;
 /**
  * 内部用户接口信息服务
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
- * @from <a href="https://yupi.icu">编程导航知识星球</a>
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
+ * @from <a href="https://wl2o2o.github.io/">CSGUIDER博客</a>
  */
 public interface InnerUserInterfaceInfoService {
 

@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.yupi</groupId>
+    <groupId>com.wl</groupId>
     <artifactId>smartapi-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 

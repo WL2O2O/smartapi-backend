@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
 /**
  * 权限校验 AOP
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 @Aspect
 @Component

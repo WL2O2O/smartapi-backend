@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * 帖子接口
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 @RestController
 @RequestMapping("/post")

@@ -5,7 +5,7 @@ import com.wl.project.common.ErrorCode;
 /**
  * 自定义异常类
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 public class BusinessException extends RuntimeException {
 

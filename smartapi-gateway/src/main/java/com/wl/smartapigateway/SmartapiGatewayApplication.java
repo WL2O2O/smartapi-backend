@@ -45,8 +45,8 @@ public class SmartapiGatewayApplication {
     //        return builder.routes()
     //                .route("tobaidu", r -> r.path("/baidu")
     //                        .uri("https://www.baidu.com"))
-    //                .route("toyupiicu", r -> r.path("/yupiicu")
-    //                        .uri("http://yupi.icu"))
+    //                .route("tocsguidericu", r -> r.path("/csguidericu")
+    //                        .uri("http://csguider.icu"))
     //                .build();
     //    }
 

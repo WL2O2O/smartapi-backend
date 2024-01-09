@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 查询请求
  *
- * @author yupi
+ * @author <a href="https://github.com/wl2o2o">程序员CSGUIDER</a>
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
